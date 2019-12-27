@@ -1,3 +1,3 @@
 # python
 
-My own Python tutorail files
+My own Python tutorial files
