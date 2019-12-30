@@ -1,13 +1,11 @@
 # Chapter **0.**  Python Data Structure Basics
 
-## ***Numbers**
-
-**1. Basic Arithmetic :**
+## **Number Basic Arithmetic :**  
  * Floor Division : `7//4 = 1`
  * Modulo :  `7%4 = 3`
  * Powers : `2**3 = 8`
  
-**2. Data Type in Python :** 
+## Data Type in Python :
  * int (for integer)
  * float
  * str (for string)
@@ -17,7 +15,7 @@
  * set
  * bool (for Boolean True/False)
 
-**3. Strings :**
+## Strings :
  * Declare : `'hello'` **or** `"String built with double quotes"`
  * Method  : 
      + len() -> Counts all of the characters in the string, including spaces and punctuation.
