@@ -1,4 +1,4 @@
-# Chapter **1.**  Python Data Structure Basics
+# Chapter **3.**  Python Data Structure Basics
 
 ## ***List**
 
