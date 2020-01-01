@@ -13,7 +13,7 @@
  * tuple
  * dict (for dictionary)
  * set
- * bool (for Boolean True/False)
+ * bool (for Boolean True/False/None)
 
 ## Data Structure in Python
 * **Strings**
@@ -23,6 +23,12 @@
 * **Dictionaries :**
     + Objects retrieved by key.
     + Unordered and cannot be sorted.
+* **Tuples :**
+    + Similar to list, but **immutable**.
+    + Cannot append items in tuple!
+* **Sets :**
+    + **Unordered** collection of **Unique** elements
+    + 'set' object **does not support indexing**
 
 ## Strings :
  * Declare : `'hello'` **or** `"String built with double quotes"`
@@ -54,7 +60,10 @@
      + `my_list * 2` -> `['A string',23,100.232,'o','new item','A string',23,100.232,'o','new item']`
      
 ## Dictionaries :
- * Declare : `my_dict = {'key1':'value1','key2':'value2'}`  **or**  `my_dict = {'key1':123,'key2':[12,23,33],'key3':['item0','item1','item2']}`  **or**  `d = {}`
+ * Declare : 
+     + `my_dict = {'key1':'value1','key2':'value2'}`  
+     + `my_dict = {'key1':123,'key2':[12,23,33],'key3':['item0','item1','item2']}`  
+     + `d = {}`
  * Method  : 
      + keys() -> return a list of all keys
      + values() -> return a list of all values
@@ -65,3 +74,26 @@
      + `my_dict['key1'] -= 123`
      + `d['animal'] = 'Dog'`
      
+## Tuples :
+ * Declare :
+     + `t = (1,2,3)`
+     + `t = ('one',2)`
+ * Method  :
+     + len()
+     + index() -> enter a value and return the index  ex. `t.index('one')` -> `0`
+     + count() -> count the number of times a value appears
+ * Access  :
+     + `t[0]`
+     + `t[-1]`
+ 
+ ## Sets :
+ * Declare : Construct them by using the set() function.
+     + `x = set()`
+     + `x = {1,2,3}` -> `type(x)` -> `set`
+ * Method  :
+     + add()
+     + set() ex. `list1 = [1,1,2,2]` -> `set(list1)` -> `{1,2}`
+ * Access  :
+     + Use _**for** a **in** x_ access items in set
+ 
+  ## Files :
