@@ -31,3 +31,15 @@
      + `s[::-1]` -> `dlroW olleH`  
 
 ## Lists :
+ * Declare : `my_list = ['A string',23,100.232,'o']`  
+ * Method  : 
+     + len() ex. `len(my_list)` -> `4`
+     + append()
+     + pop() ex. `popped_item = my_list.pop()` 
+     + sort() -> numbers it will go ascending or alphabetical order
+     + reverse()
+ * Access  :
+     + `my_list[0]` -> `'A string'`
+     + `my_list[:3]` -> `'A string',23,100.232`
+     + `my_list = my_list + ['new item']` -> `['A string',23,100.232,'o','new item']`
+     + `my_list * 2` -> `['A string',23,100.232,'o','new item','A string',23,100.232,'o','new item']`
