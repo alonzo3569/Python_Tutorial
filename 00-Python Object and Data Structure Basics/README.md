@@ -15,6 +15,15 @@
  * set
  * bool (for Boolean True/False)
 
+## Data Structure in Python
+* **Strings**
+* **Lists :**
+    + Objects retrieved by location.  
+    + Ordered sequence can be indexed or sliced.  
+* **Dictionaries :**
+    + Objects retrieved by key.
+    + Unordered and cannot be sorted.
+
 ## Strings :
  * Declare : `'hello'` **or** `"String built with double quotes"`
  * Method  : 
@@ -43,3 +52,16 @@
      + `my_list[:3]` -> `'A string',23,100.232`
      + `my_list = my_list + ['new item']` -> `['A string',23,100.232,'o','new item']`
      + `my_list * 2` -> `['A string',23,100.232,'o','new item','A string',23,100.232,'o','new item']`
+     
+## Dictionaries :
+ * Declare : `my_dict = {'key1':'value1','key2':'value2'}`  **or**  `my_dict = {'key1':123,'key2':[12,23,33],'key3':['item0','item1','item2']}`  **or**  `d = {}`
+ * Method  : 
+     + keys() -> return a list of all keys
+     + values() -> return a list of all values
+     + items() -> return tuples of all items  ex. `my_dict.items()` -> `dict_items([('key1', 1), ('key2', 2)])`
+ * Access  :
+     + `my_dict['key2']`
+     + `my_dict['key1'] = my_dict['key1'] - 123`
+     + `my_dict['key1'] -= 123`
+     + `d['animal'] = 'Dog'`
+     
