@@ -28,5 +28,6 @@
      + `s[1:]` -> `ello World`
      + `s[:3]` -> `Hel`
      + `s[::2]` -> `HloWrd`
-     + `s[::-1]` -> `dlroW olleH`
- * 
+     + `s[::-1]` -> `dlroW olleH`  
+
+## Lists :
