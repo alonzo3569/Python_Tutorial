@@ -5,6 +5,7 @@
 1. **help() :** `help(lst.count)`
 2. **type() :** `type(a)`
 3. **print() :**
+4. **input() :** `a = input('PLZ guess: ')`
 
 There are three ways to perform string formatting:
 
