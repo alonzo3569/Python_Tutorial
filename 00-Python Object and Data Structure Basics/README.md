@@ -97,3 +97,22 @@
      + Use _**for** a **in** x_ access items in set
  
   ## Files :
+ * Open file:
+     + `my_file = open('test.txt')`       -> read only (won't create a new file if the file doesn't exsist, w&a will)
+     + `my_file = open('test.txt','w')`   -> write only
+     + `my_file = open('test.txt','w+')`  -> "+" allows read and write 
+     + `my_file = open('test.txt','a+')`  -> append (will put the cursor at EOF directly)
+ * Read file:
+     + `my_file.read()` -> read every lines and return a single string
+     + `my_file.readlines()` -> read every lines and return a list with several item(lines)
+     + `with open('C:\\Users\\logan\\Desktop\\python\\python_note\\myfile.txt') as my_new_file:`  
+     `contents = my_new_file.read()` -> allows user to write/read a file without using .close()
+ * Write file:
+     + `my_file.write('\nThis is a new line')` -> don't forget **\n**
+ * Close file:
+     + `my_file.close()`
+ * Other method:
+     + `my_file.seek(0)` -> remember to use it after read() or append()
+     + `for line in open('test.txt'):`  
+     `print(line)`
+    
