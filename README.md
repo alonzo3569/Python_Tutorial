@@ -5,7 +5,7 @@
 1. **help() :** `help(lst.count)`
 2. **type() :** `type(a)`
 3. **print() :**
-4. **input() :** `a = input('PLZ input: ')`
+
 
 There are three ways to perform string formatting:
 
@@ -31,3 +31,5 @@ There are three ways to perform string formatting:
     4. **For more String Formatting details, check out Ch0 03.ipynb or visit [**here**][0]!**
         
     [0]: https://docs.python.org/3/reference/lexical_analysis.html#f-strings
+    
+4. **input() :** `a = input('PLZ input: ')`
