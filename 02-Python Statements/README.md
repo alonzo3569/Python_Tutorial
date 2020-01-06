@@ -73,4 +73,18 @@ sorted(d.values())
 
 ## while statement:
 ```python
+while condition:
+    code statements
+else:
+    final code statements
+```
+
+```python
+while test: 
+    code statement
+    if test: 
+        break  #break out of hte loop
+    if test: 
+        continue # skip this round and continue while loop
+else:
 ```
