@@ -103,8 +103,8 @@
      + `my_file = open('test.txt','w+')`  -> "+" allows read and write 
      + `my_file = open('test.txt','a+')`  -> append (will put the cursor at EOF directly)
  * Read file:
-     + `my_file.read()` -> read every lines and return a single string
-     + `my_file.readlines()` -> read every lines and return a list with several item(lines)
+     + `my_file.read()` -> read every line and return a single string
+     + `my_file.readlines()` -> read every lines and return a list with several items(lines)
      + `with open('C:\\Users\\logan\\Desktop\\python\\python_note\\myfile.txt') as my_new_file:`  
      `contents = my_new_file.read()` -> allows user to write/read a file without using .close()
  * Write file:
