@@ -49,10 +49,15 @@
  * Declare : `my_list = ['A string',23,100.232,'o']`  
  * Method  : 
      + len() ex. `len(my_list)` -> `4`
-     + append()
+     + append() -> allows us to add elements to the end of a list
      + pop() ex. `popped_item = my_list.pop()` 
      + sort() -> numbers it will go ascending or alphabetical order
      + reverse()
+     + count()  -> Check how many times 2 shows up in the list, ex : `lst.count(2)`
+     + extend()
+     + insert()
+     + remove()
+     
  * Access  :
      + `my_list[0]` -> `'A string'`
      + `my_list[:3]` -> `'A string',23,100.232`
