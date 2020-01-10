@@ -88,3 +88,39 @@ while test:
         continue # skip this round and continue while loop
 else:
 ```
+## List Comprehensions (list + generator)
+1. EX1
+    ```python
+    lst = [x for x in 'word']
+    ```
+    => Output: ['w', 'o', 'r', 'd']
+
+2. EX2
+    ```python
+    lst = [x**2 for x in range(0,11)]
+    ```
+    => Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+3. EX3
+    ```python
+    lst = [x for x in range(11) if x % 2 == 0]
+    ```
+    => Output: [0, 2, 4, 6, 8, 10]
+    
+4. EX4
+    ```python
+    celsius = [0,10,20.1,34.5]
+    fahrenheit = [((9/5)*temp + 32) for temp in celsius ]
+    fahrenheit
+    ```
+    => Output: [32.0, 50.0, 68.18, 94.1]
+    
+    ```python
+    result = [x if x%2==0 else 'ODD' for x in range(0,11)]
+    ```
+5. EX5
+    ```python
+    lst = [ x**2 for x in [x**2 for x in range(11)]]
+    # equal
+    test = [y**2 for y in [x**2 for x in range(11)]]
+    ```
+    => Output: [0, 1, 16, 81, 256, 625, 1296, 2401, 4096, 6561, 10000] ==> x**4
