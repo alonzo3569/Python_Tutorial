@@ -103,3 +103,9 @@ max(mylist)
     ```
     => Output: 91
     
+8. **join()** : Allows you to join together **strings in a list** with some connector string.
+```python
+"--".join(['a','b','c'])
+```
+Output => `'a--b--c'`
+    
