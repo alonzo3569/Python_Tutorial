@@ -60,6 +60,7 @@ list(enumerate('abcde'))
 ```python
 mylist1 = [1,2,3,4,5] #mylist1 = [1,2,3,4,5,6,7,8,9,10] also works
 mylist2 = ['a','b','c','d','e']
+print(list(zip(mylist1,mylist2)))
 ```
 => Output: `[(0, 'a'), (1, 'b'), (2, 'c'), (3, 'd'), (4, 'e')]`
 
