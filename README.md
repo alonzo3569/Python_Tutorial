@@ -87,4 +87,4 @@ max(mylist)
 => Output: `10\n 100\n`
 
 7. **random()** :
-    * shuffle
+    * shuffle = 
