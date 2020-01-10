@@ -87,14 +87,15 @@ max(mylist)
 => Output: `10\n 100\n`
 
 7. **random library**
-    * shuffle : Will effect the list passed. Won't return anything.
+    * **shuffle :** Will effect the list passed. Won't return anything.
     ```python
     from random import shuffle
     shuffle(mylist)
     print(mylist)
     ```
-    => Output: `[40, 10, 100, 30, 20]`
-    * randint : Return random integer in range [a, b], including both end points.
+    => Output: `[40, 10, 100, 30, 20]`  
+    </br>
+    * **randint :** Return random integer in range [a, b], including both end points.
     ```python
     from random import randint
     print(randint(0,100))
