@@ -35,7 +35,8 @@ list(filter(check_even,nums))
 ```
 => Output: `[0, 2, 4, 6, 8, 10]`
 
-## **Lambda expression :** allow us to create "anonymous" functions.
+## **Lambda expression :**  
+* Lambda expression allow us to create "anonymous" functions.
 ```python
 list(map(lambda num: num ** 2, my_nums))
 ```
