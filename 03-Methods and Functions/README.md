@@ -54,7 +54,7 @@ print(a(s))
 ```
 => Output: `cba`
 
-**Note : ** lambda expressions works very well with certain non-built-in libraries, such as pandas library for data analysis.
+**Note :** lambda expressions works very well with certain non-built-in libraries, such as pandas library for data analysis.
 
 ## Python Scope  
 * A variable is only available from **inside** the function it is created and is **not** available **outside** the function
