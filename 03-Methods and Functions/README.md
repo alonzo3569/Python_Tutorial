@@ -94,6 +94,8 @@ myfunc()
 
 print(x)
 ```
-Output => `200`
-**Note :** [Reference][1]
+Output => `200`  
+
+Note : [Ref][1]
+
 [1]: https://www.w3schools.com/python/python_scope.asp
