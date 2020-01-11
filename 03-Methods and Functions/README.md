@@ -100,3 +100,45 @@ Output => `200`
 Note : [Ref][1]
 
 [1]: https://www.w3schools.com/python/python_scope.asp
+
+## *args and **kwargs
+
+* *args: it allows for an arbitrary number of inputs **(Tuples)**
+```python
+def myfunc(*args):
+    #print(args)    # output => (40, 60, 20)
+    return sum(args)*.05
+
+myfunc(40,60,20)
+myfunc(10,10,10,10)
+```
+Output => `6\n 2\n`  
+
+* **kwargs: it handles arbitrary numbers of key/value pairs and  builds a dictionary **(Dictionary)**
+```python
+def myfunc(**kwargs):
+    if 'fruit' in kwargs:
+        #print(kwargs)    # output => {'fruit': 'pineapple'}
+        print(f"My favorite fruit is {kwargs['fruit']}") 
+    else:
+        print("I don't like fruit")
+        
+myfunc(fruit='pineapple') # key = fruit, value = 'pineapple'
+```
+Output => `My favorite fruit is pineapple`  
+
+* *args and **kwargs combined
+```python
+def myfunc(*args, **kwargs):
+    if 'fruit' and 'juice' in kwargs:
+        print()
+        print(f"I like {' and '.join(args)} and my favorite fruit is {kwargs['fruit']}")
+        print(f"May I have some {kwargs['juice']} juice?")
+    else:
+        pass
+        
+myfunc('eggs','spam',fruit='cherries',juice='orange')
+```
+**Note :** In this case, args = ('eggs', 'spam'), kwargs = {'fruit': 'cherries', 'juice': 'orange'}  
+Output => `I like eggs and spam and my favorite fruit is cherries\n May I have some orange juice?`  
+
