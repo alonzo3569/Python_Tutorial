@@ -29,7 +29,7 @@
   ```python
   Help on built-in function ceil in module math:
 
-ceil(...)
+    ceil(...)
     ceil(x)
     
     Return the ceiling of x as an Integral.
