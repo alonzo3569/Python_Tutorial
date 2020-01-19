@@ -100,10 +100,11 @@ Output => `200`
 
 Note : [Ref][1]
 
-* Conclusion: 
+* __Conclusion:__ 
     * In python, What all matters is whether the variable is **inside** or **outside** the **function**. 
-    * In C++, we can tell the variable's scope by curly braces{}. However, in python, we can tell by 
-    * Only **functions** will affect, statements such as `While, if, for...` won't affect. For example,
+    * In C++, we can tell the variable's scope by curly braces{}. However, in python, we can tell by function.
+    * Only **functions** will affect, statements such as `While, if, for...` won't affect.  
+    For example,
     ```python 
     def get_positive_int(prompt):
         While True:
