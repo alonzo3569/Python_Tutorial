@@ -24,6 +24,17 @@
   some_main_script.report_main() # call function in some_main_script.py module
   my_subscript.sub_report()
   ```
+* __dir() :__ look for all the functions in the module. ex. `print(dir(math))`
+* __help() :__ 
+  ```python
+  Help on built-in function ceil in module math:
+
+ceil(...)
+    ceil(x)
+    
+    Return the ceiling of x as an Integral.
+    This is the smallest integer >= x.
+  ```
  
 ## Concept of __ name __ and "__ main __"
 * If the .py file is executed directly, the so called `if __name__ == "__main__":` part will be executed, which means every line will be executed.
