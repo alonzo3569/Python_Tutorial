@@ -57,6 +57,7 @@ print(a(s))
 **Note :** lambda expressions works very well with certain non-built-in libraries, such as pandas library for data analysis.
 
 ## Python Scope  
+* A variable created **outside** of a function is **global** and can be used by anyone.
 * A variable is only available from **inside** the function it is created and is **not** available **outside** the function
 ```python
 def myfunc():
