@@ -100,12 +100,27 @@ Output => `200`
 
 Note : [Ref][1]
 
+* Conclusion: 
+    * In python, What all matters is whether the variable is **inside** or **outside** the **function**. 
+    * In C++, we can tell the variable's scope by curly braces{}. However, in python, we can tell by 
+    * Only **functions** will affect, statements such as `While, if, for...` won't affect. For example,
+    ```python 
+    def get_positive_int(prompt):
+        While True:
+            n = int(input("Get int: "))
+            if n > 0:
+                break
+        return n            # C++ won't allow n be used outside while{}, but python can.
+                            # Since n can be used inside get_positive_int() function.  
+    ```
+
 [1]: https://www.w3schools.com/python/python_scope.asp
 
 ## *args and **kwargs
 
 * *args: it allows for an arbitrary number of inputs **(Tuples)**
 ```python
+
 def myfunc(*args):
     #print(args)    # output => (40, 60, 20)
     return sum(args)*.05
