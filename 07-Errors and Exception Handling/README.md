@@ -54,31 +54,31 @@ def askint():
 Unittest lets you write your own test programs. The goal is to send a specific set of data to your program, and analyze the returned results against an expected result.
 
 * __cap.py__
- ```python
- def cap_text(text):
-     return text.capitalize()                     # Only capitalize the first character of the sentence
-                                                  # Use title() if you want to capitalize 1st char in every word
- ```
+     ```python
+     def cap_text(text):
+         return text.capitalize()                     # Only capitalize the first character of the sentence
+                                                      # Use title() if you want to capitalize 1st char in every word
+     ```
 * __test_cap.py__
- ```python
- import unittest
- import cap
+     ```python
+     import unittest
+     import cap
 
- class TestCap(unittest.TestCase):
-    
-     def test_one_word(self):
-         text = 'python'
-         result = cap.cap_text(text)
-         self.assertEqual(result, 'Python')
-         
-     def test_multiple_words(self):
-         text = 'monty python'
-         result = cap.cap_text(text)                # Return Monty python
-         self.assertEqual(result, 'Monty Python')
-         
- if __name__ == '__main__':
-     unittest.main()
- ```
+     class TestCap(unittest.TestCase):
+
+         def test_one_word(self):
+             text = 'python'
+             result = cap.cap_text(text)
+             self.assertEqual(result, 'Python')
+
+         def test_multiple_words(self):
+             text = 'monty python'
+             result = cap.cap_text(text)                # Return Monty python
+             self.assertEqual(result, 'Monty Python')
+
+     if __name__ == '__main__':
+         unittest.main()
+     ```
 * __Output__  
   * **Failed cuz Monty python != Monty Python**
   ```
