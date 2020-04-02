@@ -47,11 +47,11 @@ def hello():
 
 if __name__ == "__main__":
 
-    # Raw function. Can be used as variables
+    # Raw function. Can be used as function object (sort of a variable)
     hello           
     # > <function __main__.hello>
 
-    # Execute variable 
+    # Execute function object
     hello()   
     # > 'Hi Jose!'
 ```
