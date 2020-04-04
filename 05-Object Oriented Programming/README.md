@@ -171,7 +171,7 @@ D.num
 # > 5  => Inherit from Class C
 ```
 
-## **Method super()**
+## **Super()**
 * A shortcut for calling __base classes__
 * Follows __Method Resolution Order__  
 * __Simple Inheritance__
