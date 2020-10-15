@@ -16,15 +16,7 @@ print('size:',array.size)   # 元素个数
 
 ```
 
-创建 array 有很多 形式
-array：创建数组
-dtype：指定数据类型
-zeros：创建数据全为0
-ones：创建数据全为1
-empty：创建数据接近0
-arrange：按指定范围创建数据
-linspace：创建线段
-
+* dtype指定資料型態
 ```python
 a = np.array([2,23,4],dtype=np.int)
 print(a.dtype)
@@ -55,7 +47,7 @@ array([[ 0.,  0.,  0.,  0.],
 ```
 
 
-* 创建全一数组, 同时也能指定这些特定数据的 dtype:
+* 用 ones 创建全一数组, 同时也能指定这些特定数据的 dtype:
 
 ```python
 a = np.ones((3,4),dtype = np.int)   # 数据为1，3列4行
@@ -67,7 +59,7 @@ array([[1, 1, 1, 1],
 ```
 
 
-* 创建全空数组, 其实每个值都是接近于零的数:
+* 用 empty 创建全空数组, 其实每个值都是接近于零的数:
 ```python
 a = np.empty((3,4)) # 数据为empty，3行4列
 """
@@ -94,7 +86,7 @@ A = np.arange(14,2, -1).reshape((3,4))  # 14-3 每次減1
 #       [ 6,  5,  4,  3]])
 
 ```
-* 使用 reshape 改变数据的形状
+* 用 reshape 改变数据的形状
 ```python
 a = np.arange(12).reshape((3,4))    # 3列4行，0到11
 """
