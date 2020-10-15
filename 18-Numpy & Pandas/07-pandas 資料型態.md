@@ -111,7 +111,7 @@ max    1.0  1.0  3.0
 print(df2.T)
 
 """                   
-0                    1                    2  \
+                     0                    1                    2  \
 A                    1                    1                    1   
 B  2013-01-02 00:00:00  2013-01-02 00:00:00  2013-01-02 00:00:00   
 C                    1                    1                    1   
@@ -130,9 +130,10 @@ F                  foo
 """
 ```
 
-* 按照 Dataframe 內按照index(列標籤)大小進行排序
+* 按照 Dataframe 內按照index(列標籤)大小進行排序 
 ```python
 print(df2.sort_index(axis=1, ascending=False))
+# 對"行"進行排序，依據行index大小(ABCDEF)進行排序(axis=1)，且排序方式為"下降"(ascending)
 
 """
      F      E  D    C          B    A
@@ -145,13 +146,14 @@ print(df2.sort_index(axis=1, ascending=False))
 
 * 按照 Dataframe 內按照"某一行數據"大小進行排序
 ```python
-print(df2.sort_values(by='B'))
+print(df2.sort_values(by='E'))
 
+# E 行的test和train都擺到一起了
 """
      A          B    C  D      E    F
 0  1.0 2013-01-02  1.0  3   test  foo
-1  1.0 2013-01-02  1.0  3  train  foo
-2  1.0 2013-01-02  1.0  3   test  foo
+1  1.0 2013-01-02  1.0  3   test  foo
+2  1.0 2013-01-02  1.0  3  train  foo
 3  1.0 2013-01-02  1.0  3  train  foo
 """
 ```
