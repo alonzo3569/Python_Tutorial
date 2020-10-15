@@ -27,7 +27,7 @@ c=b**2
   # array([-5.44021111,  9.12945251, -9.88031624,  7.4511316 ])
   ```
   * sum(), min(), max()
-  ```python
+```python
 import numpy as np
 a=np.random.random((2,4))
 print(a)
